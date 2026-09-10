@@ -1,0 +1,2528 @@
+# PAVAN BHOSALE
+
+# EPIC INTERACTIVE PORTFOLIO
+
+## UI / UX / MOTION / 3D DESIGN SPECIFICATION
+
+**Document purpose:**
+This document is the visual and interaction source of truth for implementing Pavan Bhosale's personal portfolio website.
+
+The website is not intended to be a conventional portfolio.
+
+It should feel like an **interactive digital journey through the evolution of a software developer**.
+
+---
+
+# 01 — DESIGN NORTH STAR
+
+## Core concept
+
+# PAVAN.OS
+
+The website is conceptually an operating environment representing Pavan's technical journey.
+
+It combines:
+
+* premium editorial web design
+* cinematic scrolling
+* interactive 3D
+* game-like progression
+* spatial UI
+* contextual cursor interactions
+* AI/software visual language
+* storytelling
+* subtle futuristic aesthetics
+
+The website should communicate:
+
+> "You are not reading Pavan's resume. You are exploring Pavan's world."
+
+---
+
+# 02 — EXPERIENCE GOALS
+
+The visitor should feel:
+
+### First 5 seconds
+
+"Something is different about this website."
+
+### First 15 seconds
+
+"This is an interactive experience."
+
+### After exploring projects
+
+"Pavan actually builds things."
+
+### At the end
+
+"I understand who Pavan is and what he can build."
+
+The website must balance:
+
+**WOW → CLARITY → TRUST**
+
+Never sacrifice clarity for visual effects.
+
+---
+
+# 03 — DESIGN PERSONALITY
+
+The visual personality is:
+
+* cinematic
+* intelligent
+* futuristic
+* sophisticated
+* experimental
+* technical
+* minimal
+* atmospheric
+* premium
+* slightly mysterious
+
+Avoid:
+
+* generic cyberpunk
+* hacker aesthetics
+* excessive neon
+* generic purple AI gradients
+* excessive glassmorphism
+* childish gaming visuals
+* excessive rounded cards
+* template-like layouts
+* random 3D objects
+* decorative effects without purpose
+
+---
+
+# 04 — COLOR SYSTEM
+
+Use a restrained dark palette.
+
+## Base colors
+
+```text
+VOID
+#050507
+
+DEEP
+#090B10
+
+SURFACE
+#0E1117
+
+SURFACE-2
+#141821
+
+SURFACE-3
+#1B202A
+```
+
+These are suggested starting tokens, not mandatory final colors.
+
+---
+
+## Primary text
+
+```text
+TEXT-PRIMARY
+#F3F1EA
+
+TEXT-SECONDARY
+#A6A8AE
+
+TEXT-MUTED
+#666A73
+
+TEXT-DIM
+#41454D
+```
+
+Primary typography should never be pure white.
+
+Use warm/off-white to make the interface feel more editorial.
+
+---
+
+# 05 — ACCENT COLOR
+
+Use ONE primary accent.
+
+Recommended direction:
+
+## ELECTRIC LIME / GREEN
+
+Suggested:
+
+```text
+ACCENT
+#B8FF4A
+
+ACCENT-BRIGHT
+#D5FF8A
+
+ACCENT-DIM
+#6E9E32
+```
+
+Why:
+
+It subtly connects the visual identity to:
+
+* GreenCode
+* energy
+* data
+* system status
+* active states
+
+Do not use the accent everywhere.
+
+Accent should mean:
+
+**interactive / active / important / selected**
+
+---
+
+# 06 — SECONDARY ACCENTS
+
+Secondary colors should be used sparingly and primarily for project-specific worlds.
+
+NeuroNotes:
+
+```text
+NEURAL-BLUE
+#6CA8FF
+```
+
+GreenCode:
+
+```text
+ECO-GREEN
+#B8FF4A
+```
+
+Achievements:
+
+```text
+WARM-GOLD
+#D9B86C
+```
+
+These should NOT become global website colors.
+
+---
+
+# 07 — COLOR USAGE RATIO
+
+Approximate ratio:
+
+```text
+BLACK / DARK
+70–80%
+
+OFF-WHITE
+10–15%
+
+GREYS
+8–12%
+
+ACCENT
+1–3%
+```
+
+The accent should feel valuable because it is rare.
+
+---
+
+# 08 — GRADIENTS
+
+Use gradients primarily for:
+
+* atmospheric lighting
+* 3D environment illumination
+* subtle backgrounds
+* glow
+* depth
+
+Avoid obvious:
+
+```text
+purple → blue → pink
+```
+
+startup-style gradients.
+
+Gradients should be barely noticeable until the user interacts.
+
+---
+
+# 09 — TYPOGRAPHY
+
+Use three typographic roles.
+
+## DISPLAY
+
+Large geometric/editorial sans-serif.
+
+Use for:
+
+* PAVAN
+* BHOSALE
+* chapter headings
+* project titles
+* major statements
+
+---
+
+## BODY
+
+Neutral modern sans-serif.
+
+Use for:
+
+* descriptions
+* project information
+* education
+* experience
+* supporting text
+
+---
+
+## MONOSPACE
+
+Use for technical/system metadata.
+
+Examples:
+
+```text
+SYS/01
+PROJECT.NODE
+BUILD_STATUS
+04 / 08
+SCROLL TO ENTER
+AVAILABLE
+```
+
+---
+
+# 10 — TYPOGRAPHIC SCALE
+
+Desktop starting scale:
+
+```text
+HERO NAME
+clamp(5rem, 12vw, 12rem)
+
+CHAPTER TITLE
+clamp(4rem, 9vw, 9rem)
+
+PROJECT TITLE
+clamp(3rem, 7vw, 7rem)
+
+SECTION HEADING
+clamp(2.5rem, 5vw, 5rem)
+
+SUBHEADING
+clamp(1.5rem, 3vw, 3rem)
+
+BODY
+1rem – 1.2rem
+
+TECH LABEL
+0.65rem – 0.8rem
+```
+
+Do not blindly use these values.
+
+Typography should respond fluidly to viewport size.
+
+---
+
+# 11 — LETTER SPACING
+
+Large editorial typography:
+
+slightly tight.
+
+Technical labels:
+
+slightly expanded.
+
+Example:
+
+```text
+CHAPTER 04
+letter-spacing: 0.14em
+```
+
+Do not overuse letter spacing on normal body text.
+
+---
+
+# 12 — GRID SYSTEM
+
+Use a 12-column desktop grid.
+
+Margins:
+
+approximately:
+
+```text
+desktop:
+5vw–7vw
+
+tablet:
+4vw–6vw
+
+mobile:
+20px–24px
+```
+
+The website should feel spacious.
+
+Do not fill every available pixel.
+
+---
+
+# 13 — SPACING SYSTEM
+
+Base spacing scale:
+
+```text
+4
+8
+12
+16
+24
+32
+48
+64
+80
+96
+128
+160
+192
+240
+```
+
+Use larger spacing between conceptual chapters.
+
+The site should breathe.
+
+---
+
+# 14 — BORDER SYSTEM
+
+Borders should be subtle.
+
+Default:
+
+```text
+rgba(255,255,255,0.08)
+```
+
+Active:
+
+```text
+accent with low opacity
+```
+
+Avoid heavy visible card borders.
+
+---
+
+# 15 — BORDER RADIUS
+
+Use restrained radius.
+
+Small UI:
+
+```text
+8px
+```
+
+Cards:
+
+```text
+12–20px
+```
+
+Large immersive panels:
+
+```text
+20–28px
+```
+
+Avoid making every object pill-shaped.
+
+---
+
+# 16 — DEPTH SYSTEM
+
+The website should visually operate in layers.
+
+## Layer 0 — Background
+
+* void color
+* noise
+* subtle gradient
+
+## Layer 1 — Atmosphere
+
+* glow
+* particles
+* grid
+* fog
+
+## Layer 2 — Environment
+
+* 3D objects
+* geometry
+* neural structures
+
+## Layer 3 — Content
+
+* typography
+* cards
+* UI
+
+## Layer 4 — Interaction
+
+* cursor
+* hover states
+* floating controls
+
+## Layer 5 — Foreground
+
+* navigation
+* chapter indicator
+* contextual UI
+
+Different layers should move at different rates.
+
+This creates the perception of physical depth.
+
+---
+
+# 17 — GLOBAL SCROLL PHYSICS
+
+Use Lenis as the smooth scrolling foundation.
+
+Scrolling should feel:
+
+* fluid
+* heavy enough to feel physical
+* responsive
+* controlled
+* not sluggish
+
+Avoid extreme scroll smoothing that makes the interface feel delayed.
+
+Motion's scroll-linked system is appropriate for parallax, progress indicators and interactive storytelling, while scroll-triggered animation should be used for entering/leaving viewport states.
+
+---
+
+# 18 — SCROLL BEHAVIOR
+
+There are two animation categories.
+
+## Scroll-linked
+
+Directly follows scroll.
+
+Use for:
+
+* camera movement
+* parallax
+* object rotation
+* section progress
+* horizontal movement
+* scale
+* depth
+
+## Scroll-triggered
+
+Starts when content reaches a threshold.
+
+Use for:
+
+* text reveals
+* card entrances
+* achievement activation
+* content loading
+
+Do not confuse the two.
+
+---
+
+# 19 — PARALLAX DEPTH
+
+Use at least 3 speeds:
+
+```text
+BACKGROUND
+0.2×
+
+MIDGROUND
+0.5×
+
+FOREGROUND
+1×
+
+INTERACTIVE OBJECT
+1.1–1.25×
+```
+
+This should be subtle.
+
+The user should perceive depth rather than consciously noticing "parallax."
+
+---
+
+# 20 — GLOBAL CHAPTER SYSTEM
+
+Chapters:
+
+```text
+01 INITIALIZE
+02 IDENTITY
+03 JOURNEY
+04 BUILD
+05 TOOLKIT
+06 PROOF
+07 FOUNDATION
+08 NEXT CHAPTER
+```
+
+Every chapter should have a small technical label.
+
+Example:
+
+```text
+CHAPTER 04
+BUILD
+```
+
+Use a chapter transition system that visually connects sections.
+
+---
+
+# 21 — CHAPTER INDICATOR
+
+Desktop:
+
+A small floating indicator on the right.
+
+Example:
+
+```text
+01
+02
+03
+● 04
+05
+06
+07
+08
+```
+
+Current chapter:
+
+* accent color
+* brighter text
+* subtle glow
+* small expansion
+
+Inactive chapters:
+
+* muted grey
+
+On mobile:
+
+Use:
+
+```text
+04 / 08
+```
+
+instead of a large vertical rail.
+
+---
+
+# 22 — NAVIGATION
+
+Navigation should be minimal.
+
+Top-left:
+
+```text
+PAVAN.OS
+```
+
+Top-right:
+
+```text
+04 / 08
+MENU
+```
+
+Menu opens as a full-screen spatial overlay.
+
+Menu items:
+
+```text
+IDENTITY
+JOURNEY
+PROJECTS
+TOOLKIT
+PROOF
+FOUNDATION
+CONTACT
+```
+
+Menu animation:
+
+* background expands
+* typography reveals
+* chapter nodes animate
+* cursor changes to CLOSE
+
+---
+
+# 23 — CUSTOM CURSOR
+
+Desktop only.
+
+Default:
+
+small 5–7px dot.
+
+Hover interactive element:
+
+expands into a 30–50px contextual cursor.
+
+Examples:
+
+```text
+VIEW
+```
+
+```text
+ENTER
+```
+
+```text
+OPEN ↗
+```
+
+```text
+EXPLORE
+```
+
+```text
+DRAG
+```
+
+Cursor behavior:
+
+* spring following
+* slight lag
+* magnetic attraction
+* contextual label
+* smooth interpolation
+
+Do not create a large persistent cursor.
+
+On mobile:
+
+REMOVE IT.
+
+---
+
+# 24 — MAGNETIC BUTTONS
+
+Buttons should subtly attract the cursor.
+
+Maximum movement:
+
+approximately 6–15px.
+
+Never allow the button to feel detached from its position.
+
+On hover:
+
+```text
+scale: 1.02–1.05
+```
+
+not 1.2.
+
+---
+
+# 25 — BUTTON DESIGN
+
+Primary button:
+
+```text
+[ ENTER → ]
+```
+
+Minimal surface.
+
+Secondary:
+
+```text
+VIEW PROJECT ↗
+```
+
+Text button:
+
+```text
+EXPLORE →
+```
+
+Avoid excessive filled buttons.
+
+---
+
+# 26 — HERO 3D ENVIRONMENT
+
+## Technology
+
+Spline.
+
+The hero is the primary full 3D scene.
+
+It should represent:
+
+**Pavan's digital world.**
+
+Possible objects:
+
+* abstract workstation
+* floating display
+* geometric structures
+* code panels
+* data nodes
+* neural geometry
+* abstract PB object
+* floating UI surfaces
+
+Do not use a generic 3D laptop.
+
+The scene should feel designed specifically for this portfolio.
+
+---
+
+# 27 — HERO 3D CAMERA
+
+Initial:
+
+wide cinematic view.
+
+As page loads:
+
+slow reveal.
+
+Mouse:
+
+small camera/parallax response.
+
+Scroll:
+
+camera moves forward.
+
+Suggested progression:
+
+```text
+0%
+wide environment
+
+20%
+camera approaches
+
+40%
+objects move past
+
+60%
+camera enters central structure
+
+80%
+environment dissolves
+
+100%
+identity section
+```
+
+This is a conceptual timeline.
+
+Tune it during implementation.
+
+---
+
+# 28 — HERO LIGHTING
+
+Use:
+
+* dark ambient lighting
+* one key light
+* subtle accent light
+* controlled rim light
+
+Lighting should emphasize depth.
+
+Avoid:
+
+* rainbow lighting
+* excessive bloom
+* overexposure
+
+---
+
+# 29 — HERO 3D ASSET STYLE
+
+Models should be:
+
+* low/moderate poly
+* clean
+* geometric
+* premium
+* abstract
+
+Materials:
+
+* matte
+* metallic
+* glass only where useful
+
+Avoid realistic photorealism.
+
+The rest of the site is editorial, so the 3D should match.
+
+---
+
+# 30 — HERO TEXT
+
+Initial system text:
+
+```text
+SYSTEM INITIALIZING...
+```
+
+Then:
+
+```text
+PAVAN
+BHOSALE
+```
+
+Then:
+
+```text
+SOFTWARE
+AI / ML
+DATA
+FULL STACK WEB
+```
+
+Then:
+
+```text
+SCROLL TO ENTER
+```
+
+Text should emerge through masks, depth and opacity.
+
+Avoid typewriter effects everywhere.
+
+---
+
+# 31 — HERO TRANSITION
+
+Hero must transform into Identity.
+
+Sequence:
+
+```text
+3D WORLD
+↓
+camera forward
+↓
+floating objects pass
+↓
+geometry separates
+↓
+particles form typography
+↓
+3D fades
+↓
+2D editorial layout emerges
+```
+
+No hard cut.
+
+---
+
+# 32 — IDENTITY SECTION
+
+Heading:
+
+```text
+WHO AM I?
+```
+
+Large typography.
+
+Supporting text should remain concise.
+
+Create five interactive cards:
+
+```text
+SOFTWARE
+
+AI / ML
+
+DATA
+
+FULL STACK WEB
+
+PROBLEM SOLVING
+```
+
+Cards should float at different depths.
+
+---
+
+# 33 — IDENTITY CARD BEHAVIOR
+
+On pointer movement:
+
+```text
+rotateX ±4–7°
+rotateY ±4–7°
+translateZ 10–25px
+```
+
+Keep movement subtle.
+
+On hover:
+
+* background becomes slightly brighter
+* border becomes visible
+* accent glow appears
+* internal content shifts 2–4px
+
+---
+
+# 34 — EXPERIENCE / JOURNEY
+
+Create a spatial timeline.
+
+Do not use a standard resume timeline.
+
+Use a long path extending through the viewport.
+
+Nodes represent:
+
+```text
+STUDENT
+AI / ML
+RESEARCH
+COZMOH
+SOFTWARE BUILDER
+```
+
+The camera/viewport follows the path as the user scrolls.
+
+---
+
+# 35 — COZMOH NODE
+
+Show:
+
+```text
+COZMOH
+
+FULL STACK WEB DEVELOPER
+```
+
+Do not invent additional details.
+
+Create expandable fields ready for:
+
+* dates
+* technologies
+* responsibilities
+* projects
+* results
+
+Those should remain hidden until actual data is provided.
+
+---
+
+# 36 — PROJECT UNIVERSE
+
+The projects section should feel like entering another environment.
+
+Heading:
+
+```text
+WHAT I BUILD
+```
+
+Then:
+
+```text
+01
+NEURONOTES
+
+02
+GREENCODE
+```
+
+Project cards should not be ordinary cards.
+
+Each should feel like a portal.
+
+---
+
+# 37 — PROJECT PORTAL
+
+Project portal structure:
+
+```text
+PROJECT NUMBER
+
+TITLE
+
+SHORT DESCRIPTION
+
+VISUAL / 3D WORLD
+
+EXPLORE →
+```
+
+Hover:
+
+* portal depth increases
+* image/3D environment scales subtly
+* title moves
+* cursor becomes ENTER
+
+Click:
+
+* project expands
+* background transforms
+* project-specific environment takes over
+
+---
+
+# 38 — NEURONOTES 3D
+
+Technology:
+
+React Three Fiber + Three.js.
+
+Create a neural knowledge graph.
+
+Objects:
+
+```text
+NOTE
+PDF
+PPT
+VIDEO
+```
+
+Connect to:
+
+```text
+AI PROCESSING
+```
+
+Then:
+
+```text
+FLASHCARDS
+QUIZZES
+AI CHAT
+```
+
+---
+
+# 39 — NEURONOTES GEOMETRY
+
+Nodes:
+
+small glowing spheres.
+
+Connections:
+
+thin lines.
+
+Central processing node:
+
+larger object.
+
+Background:
+
+subtle neural particles.
+
+Do not create hundreds of nodes.
+
+Target:
+
+approximately 20–60 visible elements depending on performance.
+
+---
+
+# 40 — NEURONOTES CAMERA
+
+Camera starts outside.
+
+As user scrolls:
+
+```text
+INPUT NODES
+↓
+PROCESSING
+↓
+OUTPUT NODES
+```
+
+Camera follows this path.
+
+Hover node:
+
+* node scales 1.15–1.3
+* surrounding connections brighten slightly
+* label appears
+
+---
+
+# 41 — NEURONOTES COLOR
+
+Base:
+
+dark.
+
+Neural nodes:
+
+cool blue.
+
+Active:
+
+blue + white.
+
+Accent:
+
+small amount of global lime.
+
+Do not turn entire scene blue.
+
+---
+
+# 42 — GREENCODE 3D
+
+Technology:
+
+React Three Fiber + shaders where useful.
+
+Concept:
+
+```text
+CODE
+↓
+COMPUTATION
+↓
+ENERGY
+↓
+CARBON
+↓
+CLOUD COST
+↓
+OPTIMIZATION
+```
+
+Represent this as a physical system.
+
+---
+
+# 43 — GREENCODE VISUAL LANGUAGE
+
+Use:
+
+* green energy lines
+* dark code planes
+* particle fields
+* flowing data
+* abstract server geometry
+* energy columns
+* carbon particles
+
+The environment should feel more industrial/technical than NeuroNotes.
+
+---
+
+# 44 — GREENCODE TRANSFORMATION
+
+Initial:
+
+dense code / high activity.
+
+As optimization occurs:
+
+* code reorganizes
+* particles reduce
+* energy flow becomes cleaner
+* visual noise decreases
+* system becomes more efficient
+
+End state:
+
+```text
+OPTIMIZED
+```
+
+Do not display fake numerical metrics.
+
+---
+
+# 45 — PROJECT DETAIL PANEL
+
+When a project is expanded, use:
+
+```text
+PROJECT
+CATEGORY
+
+OVERVIEW
+
+WHAT IT DOES
+
+KEY FEATURES
+
+ROLE
+
+TECHNOLOGY
+
+LINKS
+```
+
+Only show fields for which real information exists.
+
+---
+
+# 46 — SKILLS 3D ORBIT
+
+Create a central 3D object:
+
+```text
+PAVAN
+```
+
+Around it:
+
+```text
+PYTHON
+SQL
+C
+AI / ML
+HTML / CSS
+GIT
+GITHUB
+UNREAL ENGINE
+WORD
+POWERPOINT
+CANVA
+```
+
+Use orbital motion extremely subtly.
+
+The orbit should not spin constantly at high speed.
+
+---
+
+# 47 — SKILL ORBIT INTERACTION
+
+Normal:
+
+slow motion.
+
+Hover:
+
+* orbit slows
+* selected node moves forward
+* surrounding nodes become slightly dimmer
+* details appear
+
+Click:
+
+skill details panel.
+
+---
+
+# 48 — ACHIEVEMENT CONSTELLATION
+
+Create a 3D star/constellation system.
+
+Nodes:
+
+```text
+GREENCODE / INDIACom
+AIRNOVA
+OSCILLATIONS
+```
+
+Lines connect the nodes subtly.
+
+The constellation should represent milestones rather than literal stars.
+
+---
+
+# 49 — ACHIEVEMENT NODE INTERACTION
+
+Hover:
+
+node enlarges.
+
+Click:
+
+camera/visual focus moves toward it.
+
+Show:
+
+achievement title
+
+short explanation
+
+award/research result
+
+Do not invent dates or additional achievements.
+
+---
+
+# 50 — EDUCATION 3D TIMELINE
+
+Create a path through space.
+
+Nodes:
+
+```text
+SSC
+↓
+HSC
+↓
+B.E.
+```
+
+The B.E. node should be visually dominant because it is the most relevant education.
+
+Use:
+
+```text
+B.E.
+COMPUTER SCIENCE ENGINEERING
+(DATA SCIENCE)
+```
+
+---
+
+# 51 — COURSES / KNOWLEDGE VAULT
+
+Use floating document-like 3D cards.
+
+Courses:
+
+```text
+AI FOR STUDENTS:
+BUILD YOUR OWN GENERATIVE AI MODEL
+
+INTRODUCTION TO
+NATURAL LANGUAGE PROCESSING
+```
+
+Cards should look like knowledge artifacts rather than generic certificates.
+
+---
+
+# 52 — FINAL SECTION
+
+Title:
+
+```text
+MISSION COMPLETE
+```
+
+Then:
+
+```text
+THE NEXT CHAPTER
+ISN'T WRITTEN YET.
+```
+
+Then:
+
+```text
+PAVAN BHOSALE
+```
+
+CTA:
+
+```text
+LET'S BUILD SOMETHING
+WORTH EXPLORING.
+```
+
+Buttons:
+
+```text
+EMAIL
+LINKEDIN
+```
+
+---
+
+# 53 — FINAL ANIMATION
+
+As the user reaches the end:
+
+* chapter indicator reaches 08/08
+* background becomes calmer
+* particles slowly drift
+* 3D elements disappear
+* typography becomes dominant
+* accent line expands
+* contact options appear
+
+The ending should feel peaceful after the visual intensity of the journey.
+
+---
+
+# 54 — MICRO-INTERACTION LANGUAGE
+
+Use a consistent physical language.
+
+Everything should feel like it belongs to the same world.
+
+### Hover
+
+small movement.
+
+### Press
+
+small compression.
+
+### Enter
+
+depth increase.
+
+### Exit
+
+return smoothly.
+
+### Scroll
+
+continuous transformation.
+
+### Click
+
+state transition.
+
+Never abruptly jump between states.
+
+---
+
+# 55 — MOTION PRINCIPLES
+
+Motion should follow:
+
+**slow → medium → fast**
+
+Hierarchy:
+
+Major transitions:
+600–1400ms
+
+Section reveals:
+500–900ms
+
+Cards:
+250–500ms
+
+Buttons:
+150–300ms
+
+Cursor:
+50–150ms response with spring smoothing
+
+Do not apply one duration globally.
+
+---
+
+# 56 — EASING
+
+Large cinematic transitions:
+
+smooth ease-in-out / custom cubic-bezier.
+
+Micro-interactions:
+
+spring physics.
+
+Entrance:
+
+slight ease-out.
+
+Exit:
+
+faster than entrance.
+
+Avoid linear motion for ordinary UI.
+
+Linear is appropriate only when directly mapping to scroll.
+
+---
+
+# 57 — STAGGER
+
+Use stagger for:
+
+* navigation items
+* project metadata
+* achievement details
+* text groups
+
+Typical stagger:
+
+40–100ms.
+
+Do not stagger every individual character on the page.
+
+---
+
+# 58 — TEXT REVEALS
+
+Preferred:
+
+* mask reveal
+* upward displacement
+* opacity
+* clip-path
+
+Occasional:
+
+* character scramble
+* word-by-word reveal
+
+Avoid:
+
+constant typewriter animations.
+
+---
+
+# 59 — IMAGE / MEDIA BEHAVIOR
+
+Images should:
+
+* reveal through clipping
+* slightly scale on entry
+* respond subtly to cursor
+* preserve aspect ratio
+
+Avoid aggressive zooming.
+
+Use optimized image formats.
+
+---
+
+# 60 — 3D PERFORMANCE RULES
+
+3D is important, but performance is more important.
+
+Spline's own guidance recommends reducing scene complexity and avoiding excessive embeds; its documentation recommends one or two embeds per page where possible and says not to exceed three embeds per page, while using the Spline Viewer when multiple embeds are needed because it supports lazy-loading.
+
+Therefore:
+
+DO NOT load every 3D scene simultaneously.
+
+Use:
+
+* dynamic imports
+* lazy loading
+* intersection-based activation
+* scene cleanup
+* reduced resolution on mobile
+
+---
+
+# 61 — SPLINE RULE
+
+Use Spline primarily for:
+
+# HERO
+
+Potentially one additional major cinematic environment if necessary.
+
+Do not create 5–10 Spline embeds.
+
+For procedural experiences:
+
+use React Three Fiber.
+
+This keeps the architecture more controllable.
+
+---
+
+# 62 — REACT THREE FIBER RULE
+
+Use R3F for:
+
+* neural network
+* GreenCode
+* orbital skill system
+* achievement constellation
+
+Avoid R3F for simple cards.
+
+Use CSS 3D there.
+
+21st's current 3D component collection similarly distinguishes CSS-transform depth effects from full Three.js/WebGL scenes.
+
+---
+
+# 63 — CSS 3D RULE
+
+Use CSS transforms for:
+
+* project cards
+* identity cards
+* buttons
+* floating panels
+* knowledge cards
+* timeline UI
+
+Use:
+
+```text
+perspective
+rotateX
+rotateY
+translateZ
+scale
+```
+
+Keep transforms GPU-friendly.
+
+---
+
+# 64 — PARTICLE RULES
+
+Particles should be:
+
+* sparse
+* atmospheric
+* contextual
+
+Never fill the screen.
+
+Particles should respond subtly to:
+
+* cursor
+* scroll
+* section state
+
+Target performance over quantity.
+
+---
+
+# 65 — SHADER RULES
+
+Shaders may be used for:
+
+* atmospheric distortion
+* subtle gradients
+* noise
+* energy flow
+* background displacement
+
+Do not use shaders merely because WebGL is available.
+
+A shader should have a visual purpose.
+
+---
+
+# 66 — 3D ASSET LIBRARY
+
+Create the following asset categories.
+
+## Hero
+
+* abstract workstation
+* floating display
+* PB geometry
+* data nodes
+* neural structure
+* geometric frames
+
+## NeuroNotes
+
+* neural nodes
+* connections
+* input document objects
+* processing core
+* flashcard objects
+* quiz objects
+
+## GreenCode
+
+* code panels
+* server blocks
+* energy columns
+* particle streams
+* carbon particles
+* cloud infrastructure abstraction
+
+## Skills
+
+* central core
+* orbital rings
+* skill nodes
+
+## Achievements
+
+* constellation nodes
+* connecting lines
+* milestone symbols
+
+---
+
+# 67 — ASSET STYLE
+
+All 3D assets should share:
+
+* similar roughness
+* consistent lighting
+* coherent scale
+* limited materials
+* restrained colors
+
+Do not combine:
+
+realistic human models
+
+*
+
+cartoon objects
+
+*
+
+low-poly icons
+
+*
+
+photorealistic assets
+
+They should feel like one visual universe.
+
+---
+
+# 68 — 3D MATERIAL LANGUAGE
+
+Primary:
+
+matte dark.
+
+Secondary:
+
+brushed metal.
+
+Accent:
+
+emissive lime.
+
+NeuroNotes:
+
+cool emissive blue.
+
+GreenCode:
+
+lime/green energy.
+
+Glass:
+
+only for selected UI surfaces.
+
+Avoid transparent glass everywhere.
+
+---
+
+# 69 — RESPONSIVE 3D
+
+Desktop:
+
+full scene.
+
+Tablet:
+
+reduce object count.
+
+Mobile:
+
+simplified scene.
+
+Possible mobile behavior:
+
+Hero:
+
+use lightweight version of the Spline scene.
+
+NeuroNotes:
+
+simplified neural network.
+
+GreenCode:
+
+simplified visual.
+
+Skills:
+
+2D/2.5D fallback.
+
+Achievements:
+
+2D constellation.
+
+---
+
+# 70 — MOBILE INTERACTION
+
+No hover-dependent functionality.
+
+Everything must be accessible by:
+
+* tap
+* scroll
+* click
+
+Interactive elements should have minimum comfortable touch areas.
+
+Avoid tiny technical labels as the only interaction targets.
+
+---
+
+# 71 — REDUCED MOTION
+
+Respect:
+
+```text
+prefers-reduced-motion
+```
+
+When active:
+
+disable:
+
+* heavy camera movement
+* continuous particle animation
+* cursor effects
+* aggressive parallax
+* long transitions
+
+Replace with:
+
+* fades
+* simple transforms
+* static 3D
+* immediate content visibility
+
+Motion provides `useReducedMotion` specifically for this kind of accessibility-aware behavior.
+
+---
+
+# 72 — ACCESSIBILITY
+
+Must support:
+
+* keyboard navigation
+* visible focus
+* semantic HTML
+* screen-reader labels
+* accessible buttons
+* sufficient contrast
+* reduced motion
+
+Never make a 3D interaction the only way to access content.
+
+---
+
+# 73 — LOADING EXPERIENCE
+
+Initial loader:
+
+```text
+PAVAN.OS
+
+INITIALIZING EXPERIENCE
+
+3D
+MOTION
+SYSTEM
+
+[██████████░░░░]
+```
+
+The loader must be short.
+
+If all critical content is already loaded, skip unnecessary waiting.
+
+Never artificially delay the website for aesthetic reasons.
+
+---
+
+# 74 — TRANSITION BETWEEN WORLDS
+
+The project transitions should be among the best moments of the website.
+
+NeuroNotes:
+
+```text
+NEURAL NETWORK
+↓
+nodes disconnect
+↓
+particles scatter
+↓
+particles turn green
+↓
+energy streams form
+↓
+GREENCODE
+```
+
+This creates the feeling that one project world evolves into another.
+
+---
+
+# 75 — SOUND
+
+No autoplay sound.
+
+If sound is added later:
+
+```text
+SOUND OFF
+```
+
+by default.
+
+User must opt in.
+
+---
+
+# 76 — DATA INTEGRITY
+
+Use resume-backed information only.
+
+Verified project information:
+
+NEURONOTES:
+
+* AI-powered learning platform
+* notes/PDF/PPT/video inputs
+* intelligent flashcards
+* automated quizzes
+* AI chat assistant
+* concept clarification
+* study guidance
+* motivation
+* mental well-being support
+
+GREENCODE:
+
+* hybrid model
+* carbon footprint analysis
+* energy consumption
+* cloud computing
+* cloud costs
+* source-code analysis
+* optimization/refactoring
+* performance preservation
+
+Skills:
+
+* Python
+* SQL
+* C
+* AI/ML
+* HTML/CSS
+* Git/GitHub
+* Unreal Engine
+* Word
+* PowerPoint/Canva
+
+Achievements:
+
+* GreenCode research author / INDIACom
+* Airnova aerodynamics team
+* 1st Place IIT BHU Glider Competition
+* 1st Prize Oscillations paper presentation
+
+Education:
+
+* B.E. CSE (Data Science)
+* HSC Science
+* SSC
+
+Courses:
+
+* AI for Students: Build Your Own Generative AI Model
+* Introduction to Natural Language Processing / Infosys
+
+Cozmoh:
+
+* Full Stack Web Developer
+
+Do not invent missing information.
+
+---
+
+# 77 — PERFORMANCE BUDGET
+
+The site must be visually ambitious without becoming unusable.
+
+Priorities:
+
+1. First Contentful Paint
+2. Interaction readiness
+3. smooth scrolling
+4. 3D loading after initial content
+5. progressive enhancement
+
+Do not block the entire website on 3D.
+
+The HTML/content should remain meaningful even before 3D finishes loading.
+
+---
+
+# 78 — ANIMATION PERFORMANCE
+
+Prefer GPU-friendly properties:
+
+```text
+transform
+opacity
+clip-path
+filter
+```
+
+Avoid continuously animating:
+
+```text
+width
+height
+top
+left
+margin
+padding
+```
+
+Motion documentation specifically notes that properties such as opacity, transform, clip-path and filter can be GPU-accelerated and are preferable for smooth scroll-linked effects.
+
+---
+
+# 79 — COMPONENT REUSE
+
+Build reusable primitives:
+
+```text
+MagneticButton
+InteractiveCard
+ChapterLabel
+ScrollReveal
+ParallaxLayer
+CursorTarget
+ProjectPortal
+SceneContainer
+FloatingLabel
+ProgressIndicator
+```
+
+Do not duplicate animation logic across sections.
+
+---
+
+# 80 — DESIGN TOKENS
+
+Create centralized CSS variables.
+
+Example:
+
+```css
+--color-void
+--color-deep
+--color-surface
+--color-text
+--color-muted
+--color-accent
+--color-neural
+--color-gold
+
+--radius-sm
+--radius-md
+--radius-lg
+
+--space-1
+--space-2
+...
+
+--ease-smooth
+--ease-cinematic
+```
+
+Never scatter arbitrary colors throughout the codebase.
+
+---
+
+# 81 — Z-INDEX SYSTEM
+
+Use a documented hierarchy.
+
+Example:
+
+```text
+background      0
+atmosphere     10
+3d-scene       20
+content        30
+floating-ui    40
+navigation     50
+cursor         100
+modal          200
+```
+
+Avoid random z-index values.
+
+---
+
+# 82 — SCROLL SECTION HEIGHT
+
+Normal sections:
+
+approximately:
+
+```text
+100–180vh
+```
+
+Immersive scenes:
+
+```text
+200–500vh
+```
+
+Only use very tall sections when the scroll interaction genuinely requires it.
+
+Do not force users through huge empty spaces.
+
+---
+
+# 83 — PINNED SECTIONS
+
+Use pinned/sticky sections for:
+
+* hero transformation
+* NeuroNotes camera journey
+* GreenCode transformation
+* potentially skill orbit
+
+Pinned sections should always have visible progress.
+
+The user should understand that scrolling is controlling the scene.
+
+---
+
+# 84 — INTERACTION FEEDBACK
+
+Every interactive element should have at least one feedback channel:
+
+Visual:
+
+* scale
+* glow
+* color
+
+Spatial:
+
+* movement
+* depth
+
+Cursor:
+
+* label
+
+Motion:
+
+* transition
+
+Never rely on only color.
+
+---
+
+# 85 — DESIGN QUALITY CHECK
+
+Before considering a section complete, ask:
+
+### Visual
+
+Does it look premium?
+
+### Interaction
+
+Does the interaction feel intentional?
+
+### Narrative
+
+Does this advance the story?
+
+### Technical
+
+Is the implementation efficient?
+
+### Accessibility
+
+Can users understand it without the animation?
+
+### Mobile
+
+Does it still work without hover?
+
+If any answer is "no", revise the section.
+
+---
+
+# 86 — DO NOT OVERDESIGN
+
+The most important restraint:
+
+Do not use every effect available.
+
+If a section already has:
+
+* 3D
+* parallax
+* cursor interaction
+* animated typography
+
+do not additionally add:
+
+* particles
+* shaders
+* magnetic cards
+* glowing borders
+* spinning objects
+* scroll text
+
+unless they provide a meaningful improvement.
+
+---
+
+# 87 — VISUAL RHYTHM
+
+The site should alternate between:
+
+### HIGH INTENSITY
+
+3D
+camera movement
+complex interaction
+
+and
+
+### LOW INTENSITY
+
+large typography
+negative space
+quiet UI
+minimal motion
+
+This contrast makes the exciting moments feel more exciting.
+
+---
+
+# 88 — EXPERIENCE RHYTHM
+
+Recommended:
+
+```text
+HERO
+HIGH
+
+IDENTITY
+MEDIUM
+
+JOURNEY
+MEDIUM
+
+NEURONOTES
+VERY HIGH
+
+TRANSITION
+HIGH
+
+GREENCODE
+VERY HIGH
+
+SKILLS
+MEDIUM
+
+ACHIEVEMENTS
+MEDIUM
+
+EDUCATION
+LOW
+
+CONTACT
+LOW / EMOTIONAL
+```
+
+Do not maintain maximum visual intensity for the entire website.
+
+---
+
+# 89 — THE MOST IMPORTANT 3D SCENES
+
+If development time is limited, prioritize in this exact order:
+
+## 01
+
+Hero Spline environment
+
+## 02
+
+NeuroNotes neural network
+
+## 03
+
+GreenCode energy/code system
+
+## 04
+
+Skill orbit
+
+## 05
+
+Achievement constellation
+
+Everything else can be CSS 3D.
+
+---
+
+# 90 — FINAL EXPERIENCE MAP
+
+```text
+                         PAVAN.OS
+                            │
+                            ▼
+                    ┌──────────────┐
+                    │  3D HERO     │
+                    │ INITIALIZE    │
+                    └──────┬───────┘
+                           │
+                       SCROLL
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │  IDENTITY    │
+                    │ WHO AM I?    │
+                    └──────┬───────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │   JOURNEY    │
+                    │   COZMOH     │
+                    └──────┬───────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │      BUILD         │
+                 │                    │
+                 │   NEURONOTES       │
+                 │        ↓           │
+                 │    GREENCODE       │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │   TOOLKIT    │
+                    │  SKILL ORBIT │
+                    └──────┬───────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │       PROOF        │
+                 │  ACHIEVEMENT       │
+                 │  CONSTELLATION     │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │ FOUNDATION   │
+                    │ EDUCATION    │
+                    │ COURSES      │
+                    └──────┬───────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │ NEXT CHAPTER │
+                    │   CONTACT    │
+                    └──────────────┘
+```
+
+---
+
+# 91 — FINAL DESIGN PRINCIPLE
+
+The website must never feel like:
+
+"Here is my resume, but animated."
+
+It must feel like:
+
+**an interactive representation of Pavan's technical journey.**
+
+3D exists to create spatial storytelling.
+
+Motion exists to create continuity.
+
+The cursor exists to create responsiveness.
+
+Typography exists to create hierarchy.
+
+Color exists to create meaning.
+
+UI exists to communicate.
+
+Every effect must support one of those purposes.
+
+The final result should be:
+
+# IMMERSIVE
+
+# TECHNICAL
+
+# CINEMATIC
+
+# PERSONAL
+
+# FAST
+
+# ACCESSIBLE
+
+# MEMORABLE
+
+The goal is not maximum effects.
+
+The goal is maximum **experience per interaction**.
